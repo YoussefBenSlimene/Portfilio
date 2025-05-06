@@ -15,9 +15,12 @@ const AboutMeSection = () => {
               <p className="text-sm leading-relaxed text-gray-300 mb-4">
                 I&apos;m a full-stack developer with experience in building
                 products, features, and websites. I specialize in JavaScript and
-                TypeScript, with frameworks like React, Next.js, and Node.js. My
-                focus is on creating responsive, user-friendly interfaces with
-                clean, efficient code.
+                TypeScript, with frameworks like React, Next.js, and Node.js. I
+                also code with Flutter for cross-platform mobile development,
+                Azure for cloud solutions, and have experience with various
+                backend technologies. My focus is on creating responsive,
+                user-friendly interfaces with clean, efficient code across
+                multiple platforms.
               </p>
 
               <p className="text-sm leading-relaxed text-gray-300">
