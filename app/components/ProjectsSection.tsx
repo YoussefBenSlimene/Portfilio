@@ -40,7 +40,7 @@ This is still very much a work in progress, and I&apos;m continuously adding new
     },
   ];
 
-  const openProject = (project: any) => {
+  const openProject = (project: Project) => {
     setSelectedProject(project);
   };
 

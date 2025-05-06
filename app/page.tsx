@@ -7,7 +7,6 @@ import EducationSection from "./components/EducationSection";
 import SkillsSection from "./components/SkillsSection";
 import Footer from "./components/Footer";
 import FloatingMenu from "./components/FloatingMenu";
-import ContactSection from "./components/ContactSection";
 
 export default function Home() {
   return (

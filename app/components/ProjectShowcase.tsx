@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ImageCarousel from "./ImageCarousel";
 
@@ -22,18 +22,6 @@ const ProjectShowcase = ({
   isOpen,
   onClose,
 }: ProjectShowcaseProps) => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  const nextImage = () => {
-    setCurrentImageIndex((prev) => (prev + 1) % imageUrls.length);
-  };
-
-  const prevImage = () => {
-    setCurrentImageIndex((prev) =>
-      prev === 0 ? imageUrls.length - 1 : prev - 1
-    );
-  };
-
   return (
     <AnimatePresence>
       {isOpen && (
