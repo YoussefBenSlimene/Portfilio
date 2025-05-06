@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const HeroSection = () => {
@@ -8,7 +9,7 @@ const HeroSection = () => {
           <div className="w-full md:w-1/2 flex flex-col">
             <div className="bg-[#1e2029] rounded-lg p-6 mb-8 flex items-center">
               <div className="w-20 h-20 bg-[#192133] rounded-lg overflow-hidden mr-4">
-                <img
+                <Image
                   src="/me.png"
                   alt="Profile"
                   className="w-full h-full object-cover"
