@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 const HeroSection = () => {
   return (
@@ -13,12 +12,14 @@ const HeroSection = () => {
                   src="/me.png"
                   alt="Profile"
                   className="w-full h-full object-cover"
+                  width={80}
+                  height={80}
                 />
               </div>
               <div>
                 <p className="text-gray-400">Hey</p>
                 <p>
-                  I'm <span className="text-[#0ffbd2]">Youssef</span>,
+                  I&apos;m <span className="text-[#0ffbd2]">Youssef</span>,
                 </p>
                 <p className="font-semibold">Full-Stack Developer</p>
                 <div className="flex mt-2 space-x-2">
@@ -50,7 +51,7 @@ const HeroSection = () => {
 
             <a href="mailto:youssef2004bs@gmail.com">
               <button className="w-40 py-2 bg-transparent border border-[#0ffbd2] text-[#0ffbd2] rounded hover:bg-[#0ffbd2]/10 transition-all">
-                Let's Talk
+                Let&apos;s Talk
               </button>
             </a>
           </div>
