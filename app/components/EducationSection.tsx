@@ -8,7 +8,7 @@ const EducationSection = () => {
       period: "2023 – Present",
       description:
         "Focused on full-stack web development, UI/UX design principles, and modern web technologies including React, Next.js, and Node.js.",
-      achievements: ["Dean's List 2024", "Top Project Award"],
+      achievements: [],
       courses: [
         "Frontend Development",
         "Backend Systems",

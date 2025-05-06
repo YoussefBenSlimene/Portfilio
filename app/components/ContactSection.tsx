@@ -103,7 +103,7 @@ const ContactSection = () => {
                 </h4>
                 <div className="flex gap-4">
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/youssef-ben-slimen-35a545298/"
                     className="p-3 bg-[#1a1b25] rounded-full text-white hover:bg-[#ff3e8e] hover:text-white transition-all"
                   >
                     <svg
@@ -123,7 +123,7 @@ const ContactSection = () => {
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="https://github.com/YoussefBenSlimene"
                     className="p-3 bg-[#1a1b25] rounded-full text-white hover:bg-[#ff3e8e] hover:text-white transition-all"
                   >
                     <svg
@@ -141,7 +141,7 @@ const ContactSection = () => {
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/yukito__24/"
                     className="p-3 bg-[#1a1b25] rounded-full text-white hover:bg-[#ff3e8e] hover:text-white transition-all"
                   >
                     <svg

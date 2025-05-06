@@ -43,12 +43,6 @@ const Footer = () => {
             >
               Education
             </a>
-            <a
-              href="#blogs"
-              className="text-gray-400 hover:text-[#0ffbd2] transition-colors"
-            >
-              Blogs
-            </a>
           </div>
         </div>
 
@@ -59,7 +53,7 @@ const Footer = () => {
 
           <div className="flex gap-4">
             <a
-              href="#"
+              href="https://www.linkedin.com/in/youssef-ben-slimen-35a545298/ "
               className="p-2 bg-[#1e2029] rounded-full text-gray-400 hover:text-[#0ffbd2] transition-colors"
             >
               <svg
@@ -79,7 +73,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              href="#"
+              href="https://github.com/YoussefBenSlimene"
               className="p-2 bg-[#1e2029] rounded-full text-gray-400 hover:text-[#0ffbd2] transition-colors"
             >
               <svg
@@ -97,7 +91,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/yukito__24/"
               className="p-2 bg-[#1e2029] rounded-full text-gray-400 hover:text-[#0ffbd2] transition-colors"
             >
               <svg

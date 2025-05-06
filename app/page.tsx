@@ -5,9 +5,9 @@ import ExperienceSection from "./components/ExperienceSection";
 import ProjectsSection from "./components/ProjectsSection";
 import EducationSection from "./components/EducationSection";
 import SkillsSection from "./components/SkillsSection";
-import BlogsSection from "./components/BlogsSection";
 import Footer from "./components/Footer";
 import FloatingMenu from "./components/FloatingMenu";
+import ContactSection from "./components/ContactSection";
 
 export default function Home() {
   return (
@@ -21,7 +21,6 @@ export default function Home() {
       <ProjectsSection />
       <EducationSection />
       <SkillsSection />
-      <BlogsSection />
       <Footer />
     </main>
   );

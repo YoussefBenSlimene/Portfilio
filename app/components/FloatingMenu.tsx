@@ -131,26 +131,6 @@ function FloatingMenu() {
               <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
             </svg>
           </a>
-
-          <a
-            href="#blogs"
-            className="group relative flex items-center justify-center h-9 w-9 rounded-full hover:bg-[#0ffbd2]/20 transition-all"
-            title="Blogs"
-          >
-            <span className="absolute right-full mr-4 p-1 px-2 rounded-md bg-[#1e2029] text-white text-sm whitespace-nowrap opacity-0 -translate-x-2 transition-all group-hover:opacity-100 group-hover:translate-x-0">
-              Blogs
-            </span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 text-[#0ffbd2]"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
-            </svg>
-          </a>
         </div>
       </div>
     </>

@@ -1,7 +1,7 @@
 import React from "react";
 
 const SkillsSection = () => {
-  const skills = [
+  const webDevelopmentSkills = [
     {
       name: "HTML",
       icon: (
@@ -68,6 +68,110 @@ const SkillsSection = () => {
     },
   ];
 
+  const appDevelopmentSkills = [
+    {
+      name: "Flutter",
+      icon: (
+        <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#302c2c] text-[#02569b]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            width="32"
+            height="32"
+            viewBox="-30.5 0 317 317"
+            version="1.1"
+            preserveAspectRatio="xMidYMid"
+          >
+            <defs>
+              <linearGradient
+                x1="3.9517088%"
+                y1="26.9930287%"
+                x2="75.8970734%"
+                y2="52.9192657%"
+                id="linearGradient-1"
+              >
+                <stop stopColor="#000000" offset="0%"></stop>
+                <stop stopColor="#000000" stopOpacity="0" offset="100%"></stop>
+              </linearGradient>
+            </defs>
+            <g>
+              <polygon
+                fill="#47C5FB"
+                points="157.665785 0.000549356223 0.000549356223 157.665785 48.8009614 206.466197 255.267708 0.000549356223"
+              ></polygon>
+              <polygon
+                fill="#47C5FB"
+                points="156.567183 145.396793 72.1487107 229.815265 121.132608 279.530905 169.842925 230.820587 255.267818 145.396793"
+              ></polygon>
+              <polygon
+                fill="#00569E"
+                points="121.133047 279.531124 158.214592 316.61267 255.267159 316.61267 169.842266 230.820807"
+              ></polygon>
+              <polygon
+                fill="#00B5F8"
+                points="71.5995742 230.364072 120.401085 181.562561 169.842046 230.821136 121.132827 279.531454"
+              ></polygon>
+              <polygon
+                fillOpacity="0.8"
+                fill="url(#linearGradient-1)"
+                points="121.132827 279.531454 161.692896 266.072227 165.721875 234.941308"
+              ></polygon>
+            </g>
+          </svg>
+        </div>
+      ),
+    },
+    {
+      name: "Java",
+      icon: (
+        <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#302c2c] text-[#f89820]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149M8.276 15.933s-1.028.761.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389.987.602-5.679 1.661-12.007.13-7.942-1.218M13.116 11.475c1.158 1.333-.304 2.533-.304 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.688 0-.001-8.216 2.051-4.292 6.573M19.33 20.504s.679.559-.747.991c-2.712.822-11.288 1.069-13.669.033-.856-.373.75-.89 1.254-.998.527-.114.828-.93.828-.093-3.514-1.095-6.768 1.755-.529 2.649 6.838 1.644 12.455-.737 13.863-2.582M9.292 13.21s-4.362 1.036-1.544 1.412c1.189.159 3.561.123 5.77-.062 1.806-.152 3.618-.477 3.618-.477s-.637.272-1.098.587c-4.429 1.165-12.986.623-10.522-.568 2.082-1.006 3.776-.891 3.776-.891M17.116 17.584c4.503-2.34 2.421-4.589.968-4.285-.355.074-.515.138-.515.138s.132-.207.385-.297c2.875-1.011 5.086 2.981-.928 4.562 0 .001.07-.062.09-.118M14.401 0s2.494 2.494-2.365 6.33c-3.896 3.077-.888 4.832-.001 6.836-2.274-2.053-3.943-3.858-2.824-5.539 1.644-2.469 6.197-3.665 5.19-7.627M9.734 23.924c4.322.277 10.959-.153 11.116-2.198 0 0-.302.775-3.572 1.391-3.688.694-8.239.613-10.937.168 0 0 .553.457 3.393.639" />
+          </svg>
+        </div>
+      ),
+    },
+
+    {
+      name: "React Native",
+      icon: (
+        <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#302c2c] text-[#61dafb]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M12 10.11c1.03 0 1.87.84 1.87 1.89 0 1.04-.84 1.87-1.87 1.87s-1.87-.83-1.87-1.87c0-1.05.84-1.89 1.87-1.89M7.37 20c.63.38 2.01-.2 3.6-1.7-.52-.59-1.03-1.23-1.51-1.9a22.7 22.7 0 01-2.4-.36c-.51 2.14-.32 3.61.31 3.96m.71-5.74l-.29-.51c-.11.29-.22.58-.29.86.27.06.57.11.88.16l-.3-.51m6.54-.76l.81-1.5-.81-1.5c-.3-.53-.62-1-.91-1.47C13.17 9 12.6 9 12 9s-1.17 0-1.71.03c-.29.47-.61.94-.91 1.47L8.57 12l.81 1.5c.3.53.62 1 .91 1.47.54.03 1.11.03 1.71.03s1.17 0 1.71-.03c.29-.47.61-.94.91-1.47M12 6.78c-.19.22-.39.45-.59.72h1.18c-.2-.27-.4-.5-.59-.72m0 10.44c.19-.22.39-.45.59-.72h-1.18c.2.27.4.5.59.72M16.62 4c-.62-.38-2 .2-3.59 1.7.52.59 1.03 1.23 1.51 1.9.82.08 1.63.2 2.4.36.51-2.14.32-3.61-.32-3.96m-.7 5.74l.29.51c.11-.29.22-.58.29-.86-.27-.06-.57-.11-.88-.16l.3.51m1.45-7.05c1.47.84 1.63 3.05 1.01 5.63 2.54.75 4.37 1.99 4.37 3.68 0 1.69-1.83 2.93-4.37 3.68.62 2.58.46 4.79-1.01 5.63-1.46.84-3.45-.12-5.37-1.95-1.92 1.83-3.91 2.79-5.38 1.95-1.46-.84-1.62-3.05-1-5.63-2.54-.75-4.37-1.99-4.37-3.68 0-1.69 1.83-2.93 4.37-3.68-.62-2.58-.46-4.79 1-5.63 1.47-.84 3.46.12 5.38 1.95 1.92-1.83 3.91-2.79 5.37-1.95M17.08 12c.34.75.64 1.5.89 2.26 2.1-.63 3.28-1.53 3.28-2.26 0-.73-1.18-1.63-3.28-2.26-.25.76-.55 1.51-.89 2.26M6.92 12c-.34-.75-.64-1.5-.89-2.26-2.1.63-3.28 1.53-3.28 2.26 0 .73 1.18 1.63 3.28 2.26.25-.76.55-1.51.89-2.26m9 2.26l-.3.51c.31-.05.61-.1.88-.16-.07-.28-.18-.57-.29-.86l-.29.51m-2.89 4.04c1.59 1.5 2.97 2.08 3.59 1.7.64-.35.83-1.82.32-3.96-.77.16-1.58.28-2.4.36-.48.67-.99 1.31-1.51 1.9M8.08 9.74l.3-.51c-.31.05-.61.1-.88.16.07.28.18.57.29.86l.29-.51m2.89-4.04C9.38 4.2 8 3.62 7.37 4c-.63.35-.82 1.82-.31 3.96a22.7 22.7 0 012.4-.36c.48-.67.99-1.31 1.51-1.9z"></path>
+          </svg>
+        </div>
+      ),
+    },
+    {
+      name: "Android",
+      icon: (
+        <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#302c2c] text-[#3DDC84]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4483-.9993.9993-.9993c.5511 0 .9993.4483.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4483.9993.9993 0 .5511-.4483.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.2439 13.8533 7.8508 12 7.8508s-3.5902.3931-5.1367 1.0989L4.841 5.4467a.4161.4161 0 00-.5677-.1521.4157.4157 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3435-4.1021-2.6892-7.5743-6.0775-9.4396" />
+          </svg>
+        </div>
+      ),
+    },
+  ];
+
   return (
     <section id="skills" className="py-20 bg-[#121418] text-white">
       <div className="container mx-auto px-6 md:px-12">
@@ -76,8 +180,23 @@ const SkillsSection = () => {
           <div className="flex-grow h-px bg-[#0ffbd2]/30"></div>
         </div>
 
+        <h3 className="text-xl font-bold mb-4 text-[#0ffbd2]/80">
+          Web Development
+        </h3>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+          {webDevelopmentSkills.map((skill, index) => (
+            <div key={index} className="flex flex-col items-center">
+              {skill.icon}
+              <span className="mt-4 font-medium text-center">{skill.name}</span>
+            </div>
+          ))}
+        </div>
+
+        <h3 className="text-xl font-bold mb-4 text-[#0ffbd2]/80">
+          App Development
+        </h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
-          {skills.map((skill, index) => (
+          {appDevelopmentSkills.map((skill, index) => (
             <div key={index} className="flex flex-col items-center">
               {skill.icon}
               <span className="mt-4 font-medium text-center">{skill.name}</span>
@@ -87,35 +206,29 @@ const SkillsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-[#1e2029] p-6 rounded-lg border border-[#323544]">
-            <h3 className="text-xl font-bold mb-4">Frontend Development</h3>
+            <h3 className="text-[#0ffbd2] text-xl font-bold mb-4">
+              Frontend Development
+            </h3>
             <p className="text-gray-400 text-sm mb-4">
               Frontend development focuses on the user-facing aspects of a
               website. It involves creating the visual elements that users
               directly interact with, styling the website, and developing
               interactive features using HTML, CSS, and JavaScript.
             </p>
-            <div className="mt-4 flex justify-between items-center">
-              <button className="px-4 py-2 bg-[#302c2c] rounded-lg text-sm">
-                Learn More
-              </button>
-              <div className="text-[#0ffbd2] text-sm">Web Development</div>
-            </div>
+            <div className="mt-4 flex justify-between items-center"></div>
           </div>
 
           <div className="bg-[#1e2029] p-6 rounded-lg border border-[#323544]">
-            <h3 className="text-xl font-bold mb-4">App Development</h3>
+            <h3 className="text-[#0ffbd2] text-xl font-bold mb-4">
+              App Development
+            </h3>
             <p className="text-gray-400 text-sm mb-4">
               App development involves creating applications that run on mobile
               devices, desktop computers, or web browsers. It includes designing
               user interfaces, implementing business logic, and ensuring the
               application runs smoothly across different platforms.
             </p>
-            <div className="mt-4 flex justify-between items-center">
-              <button className="px-4 py-2 bg-[#302c2c] rounded-lg text-sm">
-                Learn More
-              </button>
-              <div className="text-[#0ffbd2] text-sm">Mobile Development</div>
-            </div>
+            <div className="mt-4 flex justify-between items-center"></div>
           </div>
         </div>
       </div>

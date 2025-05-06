@@ -10,7 +10,7 @@ const HeroSection = () => {
             <div className="bg-[#1e2029] rounded-lg p-6 mb-8 flex items-center">
               <div className="w-20 h-20 bg-[#192133] rounded-lg overflow-hidden mr-4">
                 <img
-                  src="/image.png"
+                  src="/me.png"
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
@@ -48,9 +48,11 @@ const HeroSection = () => {
               I design and code beautifully simple things, and I love what I do.
             </p>
 
-            <button className="w-40 py-2 bg-transparent border border-[#0ffbd2] text-[#0ffbd2] rounded hover:bg-[#0ffbd2]/10 transition-all">
-              Let's Talk
-            </button>
+            <a href="mailto:youssef2004bs@gmail.com">
+              <button className="w-40 py-2 bg-transparent border border-[#0ffbd2] text-[#0ffbd2] rounded hover:bg-[#0ffbd2]/10 transition-all">
+                Let's Talk
+              </button>
+            </a>
           </div>
 
           <div className="w-full md:w-1/2 relative">
@@ -96,11 +98,16 @@ const HeroSection = () => {
                 left: `${Math.random() * 100}%`,
               }}
             >
-              {`function developer() {`}
+              <span style={{ color: "#0ffbd2" }}>{`function `}</span>
+              <span style={{ color: "#f5f5f5" }}>{`Main() `}</span>
               <br />
-              {`  return { skills: ['HTML', 'CSS', 'React'] };`}
+              <span
+                style={{ color: "#f5f5f5", marginLeft: "10px" }}
+              >{`return `}</span>
+              <span style={{ color: "#ff8a65" }}>{`{ "Hello World" }`}</span>
+              <span style={{ color: "#f5f5f5" }}>{`;`}</span>
               <br />
-              {`}`}
+              <span style={{ color: "#f5f5f5" }}>{`}`}</span>
             </div>
           ))}
         </div>
