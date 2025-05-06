@@ -120,43 +120,4 @@ const ProjectShowcase = ({
   );
 };
 
-// Add a style block to create scoped Bootstrap overrides
-const carouselStyles = `
-<style jsx global>
-  /* Scope Bootstrap styles to only affect the carousel */
-  .carousel-container .carousel,
-  .carousel-container .carousel-inner,
-  .carousel-container .carousel-item {
-    height: 100%;
-  }
-  
-  /* Keep the original theme colors */
-  .carousel-container .carousel-indicators [data-bs-target] {
-    background-color: var(--accent, #0ffbd2);
-  }
-  
-  .carousel-container .carousel-control-prev-icon,
-  .carousel-container .carousel-control-next-icon {
-    filter: none;
-    background-color: rgba(30, 32, 41, 0.7);
-    border-radius: 50%;
-    padding: 1rem;
-  }
-  
-  /* Prevent Bootstrap from affecting other parts of your site */
-  .carousel-container {
-    font-family: inherit;
-    line-height: inherit;
-    color: inherit;
-  }
-  
-  /* Ensure images fit properly */
-  .carousel-container img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-</style>
-`;
-
 export default ProjectShowcase;

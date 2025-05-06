@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useState, useEffect, useCallback } from "react";
 
 interface ImageCarouselProps {
@@ -52,7 +53,9 @@ function ImageCarousel({ imageUrls, name }: ImageCarouselProps) {
                 }`}
               >
                 <div className="h-full w-full flex items-center justify-center bg-black">
-                  <img
+                  <Image
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     src={url}
                     alt={`${name} screenshot ${index + 1}`}
                     className="h-full w-full object-contain"
