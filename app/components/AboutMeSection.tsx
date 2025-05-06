@@ -13,8 +13,8 @@ const AboutMeSection = () => {
 
             <div className="bg-[#1e2029] rounded-lg p-6 mb-6">
               <p className="text-sm leading-relaxed text-gray-300 mb-4">
-                I&apos;m a full-stack developer with experience in building products,
-                features, and websites. I specialize in JavaScript and
+                I&apos;m a full-stack developer with experience in building
+                products, features, and websites. I specialize in JavaScript and
                 TypeScript, with frameworks like React, Next.js, and Node.js. My
                 focus is on creating responsive, user-friendly interfaces with
                 clean, efficient code.
