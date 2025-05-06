@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ImageCarousel from "./ImageCarousel";
-// Import only the Carousel CSS instead of all Bootstrap CSS
 
 interface ProjectShowcaseProps {
   name: string;
