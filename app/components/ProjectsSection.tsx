@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import ProjectShowcase from "./ProjectShowcase";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface Project {
   title: string;
@@ -21,7 +22,7 @@ const ProjectsSection = () => {
       title: "Replay Dreams AI",
       image: "/project1_1.png",
       description: `An AI-powered platform that transforms your dreams and thoughts into stunning visual stories. Currently in active development, this platform combines React, Next.js, and advanced AI technologies to create personalized dream visualizations with custom art styles and multi-language support.
-This is still very much a work in progress, and I'm continuously adding new features and refining the user experience. Looking forward to sharing more updates as the project evolves!`,
+This is still very much a work in progress, and I&apos;m continuously adding new features and refining the user experience. Looking forward to sharing more updates as the project evolves!`,
       technologies: ["React", "Next.js", "AI", "TailwindCSS"],
       link: "https://replaydreams.ai",
       featured: true,
@@ -69,10 +70,12 @@ This is still very much a work in progress, and I'm continuously adding new feat
               transition={{ duration: 0.3 }}
             >
               <div className="h-48 overflow-hidden relative">
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                  className="object-cover transition-transform duration-700 hover:scale-110"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1e2029] to-transparent opacity-60"></div>
                 {project.featured && (

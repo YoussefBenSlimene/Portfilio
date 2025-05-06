@@ -17,7 +17,7 @@ const ExperienceSection = () => {
       duration: "Jan 2024 – Dec 2024",
       role: "Intern Developer",
       details: [
-        "Developed and maintained company's internal tools",
+        "Developed and maintained company&apos;s internal tools",
         "Gained experience in telecom infrastructure and API integrations",
         "Collaborated with cross-functional teams to improve user experience",
       ],
