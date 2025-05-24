@@ -9,14 +9,17 @@ const HeroSection = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [mounted, setMounted] = useState(false);
 
-  const phrases = useMemo(() => [
-    "I design and code beautifully simple things.",
-    "I create amazing web experiences.",
-    "I build modern and responsive applications.",
-    "I love what I do and do what I love.",
-    "I turn ideas into digital reality.",
-    "I craft pixel-perfect user interfaces.",
-  ], []);
+  const phrases = useMemo(
+    () => [
+      "I design and code beautifully simple things.",
+      "I create amazing web experiences.",
+      "I build modern and responsive applications.",
+      "I love what I do and do what I love.",
+      "I turn ideas into digital reality.",
+      "I craft pixel-perfect user interfaces.",
+    ],
+    []
+  );
 
   useEffect(() => {
     setMounted(true);
@@ -74,37 +77,47 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="min-h-screen relative flex items-center justify-center bg-gradient-to-br from-[#0a0b0f] via-[#121418] to-[#1a1d29] text-white px-6 md:px-12 py-20 overflow-hidden">      {/* Animated background particles */}
+    <section className="min-h-screen relative flex items-center justify-center bg-gradient-to-br from-[#0a0b0f] via-[#121418] to-[#1a1d29] text-white px-6 md:px-12 py-20 overflow-hidden">
+      {" "}
+      {/* Animated background particles */}
       <div className="absolute inset-0 overflow-hidden">
-        {mounted && Array.from({ length: 50 }).map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-1 h-1 bg-[#00d9ff] rounded-full opacity-60"
-            initial={{
-              x: typeof window !== 'undefined' ? Math.random() * window.innerWidth : Math.random() * 1200,
-              y: typeof window !== 'undefined' ? window.innerHeight + 100 : 900,
-            }}
-            animate={{
-              y: -100,
-              x: typeof window !== 'undefined' ? Math.random() * window.innerWidth : Math.random() * 1200,
-            }}
-            transition={{
-              duration: Math.random() * 10 + 10,
-              repeat: Infinity,
-              ease: "linear",
-              delay: Math.random() * 10,
-            }}
-          />
-        ))}
+        {mounted &&
+          Array.from({ length: 50 }).map((_, i) => (
+            <motion.div
+              key={i}
+              className="absolute w-1 h-1 bg-[#00d9ff] rounded-full opacity-60"
+              initial={{
+                x:
+                  typeof window !== "undefined"
+                    ? Math.random() * window.innerWidth
+                    : Math.random() * 1200,
+                y:
+                  typeof window !== "undefined"
+                    ? window.innerHeight + 100
+                    : 900,
+              }}
+              animate={{
+                y: -100,
+                x:
+                  typeof window !== "undefined"
+                    ? Math.random() * window.innerWidth
+                    : Math.random() * 1200,
+              }}
+              transition={{
+                duration: Math.random() * 10 + 10,
+                repeat: Infinity,
+                ease: "linear",
+                delay: Math.random() * 10,
+              }}
+            />
+          ))}
       </div>
-
       {/* Gradient orbs */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-[#00d9ff]/20 to-[#0ffbd2]/20 rounded-full filter blur-3xl animate-pulse"></div>
       <div
         className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-[#0ffbd2]/20 to-[#00d9ff]/20 rounded-full filter blur-3xl animate-pulse"
         style={{ animationDelay: "2s" }}
       ></div>
-
       <motion.div
         className="container mx-auto relative z-10"
         variants={containerVariants}
@@ -287,7 +300,6 @@ const HeroSection = () => {
           </motion.div>
         </div>
       </motion.div>
-
       {/* Decorative code background - enhanced */}
       <div className="absolute inset-0 overflow-hidden opacity-5 select-none pointer-events-none">
         <div className="text-xs md:text-sm font-mono">
