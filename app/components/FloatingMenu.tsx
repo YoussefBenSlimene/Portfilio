@@ -87,7 +87,7 @@ function FloatingMenu() {
           exit="hidden"
         >
           <motion.div className="glass rounded-2xl p-4 space-y-4">
-            {menuItems.map((item, index) => (
+            {menuItems.map((item) => (
               <motion.a
                 key={item.id}
                 href={item.href}
