@@ -1,21 +1,26 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
   const [text, setText] = useState("");
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-  const phrases = [
+  const phrases = useMemo(() => [
     "I design and code beautifully simple things.",
     "I create amazing web experiences.",
     "I build modern and responsive applications.",
     "I love what I do and do what I love.",
     "I turn ideas into digital reality.",
     "I craft pixel-perfect user interfaces.",
-  ];
+  ], []);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const currentPhrase = phrases[currentPhraseIndex];
@@ -69,20 +74,19 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="min-h-screen relative flex items-center justify-center bg-gradient-to-br from-[#0a0b0f] via-[#121418] to-[#1a1d29] text-white px-6 md:px-12 py-20 overflow-hidden">
-      {/* Animated background particles */}
+    <section className="min-h-screen relative flex items-center justify-center bg-gradient-to-br from-[#0a0b0f] via-[#121418] to-[#1a1d29] text-white px-6 md:px-12 py-20 overflow-hidden">      {/* Animated background particles */}
       <div className="absolute inset-0 overflow-hidden">
-        {Array.from({ length: 50 }).map((_, i) => (
+        {mounted && Array.from({ length: 50 }).map((_, i) => (
           <motion.div
             key={i}
             className="absolute w-1 h-1 bg-[#00d9ff] rounded-full opacity-60"
             initial={{
-              x: Math.random() * window.innerWidth,
-              y: window.innerHeight + 100,
+              x: typeof window !== 'undefined' ? Math.random() * window.innerWidth : Math.random() * 1200,
+              y: typeof window !== 'undefined' ? window.innerHeight + 100 : 900,
             }}
             animate={{
               y: -100,
-              x: Math.random() * window.innerWidth,
+              x: typeof window !== 'undefined' ? Math.random() * window.innerWidth : Math.random() * 1200,
             }}
             transition={{
               duration: Math.random() * 10 + 10,
